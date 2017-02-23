@@ -1,0 +1,6 @@
+<div class="form-group form"> <%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description, placeholder: "Description" %>
+  <%= f.input :ingredient_id, collection: Ingredient.all %>
+  <%= f.button :submit %>
+<% end %>
+</div>
