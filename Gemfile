@@ -9,13 +9,8 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 ruby '2.3.3'
-gem 'cloudinary', '1.1.7'
-gem 'attachinary', github: 'assembler/attachinary'
-gem 'jquery-fileupload-rails'
-gem 'carrierwave', '~> 0.11.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
-gem 'figaro'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -30,6 +25,7 @@ gem "simple_form"
 gem "autoprefixer-rails" # adds custom css to these browsers.
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'figaro'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -44,6 +40,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'cloudinary', '1.1.7'
+gem 'attachinary', github: 'assembler/attachinary'
+gem 'jquery-fileupload-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
