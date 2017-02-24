@@ -1,6 +1,10 @@
-<div class="form-group form"> <%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description, placeholder: "Description" %>
-  <%= f.input :ingredient_id, collection: Ingredient.all %>
-  <%= f.button :submit %>
-<% end %>
+<div> <%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description, placeholder: "Description", wrapper_html: { class: 'form-group' } %>
+  <%= f.input :ingredient_id, collection: Ingredient.all, wrapper_html: { class: 'form-group' }%>
+  <div class="form-group">
+    <%= f.button :submit, class: 'btn btn-block btn-primary' %>
+  </div>
+  <% end %>
 </div>
+
+
